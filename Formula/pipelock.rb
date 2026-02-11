@@ -5,28 +5,28 @@
 class Pipelock < Formula
   desc "Security harness for AI agents"
   homepage "https://github.com/luckyPipewrench/pipelock"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.1.4/pipelock_0.1.4_darwin_amd64.tar.gz"
-      sha256 "fbbdf22de508a9830848dc1a35b7331e6060e80c00ffcca50b88bd2feba74630"
+      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.1.5/pipelock_0.1.5_darwin_amd64.tar.gz"
+      sha256 "6e19306573c1a17fb0dc4359ca24ea39a13edc72b383d5b8a0f83acade151095"
     end
     on_arm do
-      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.1.4/pipelock_0.1.4_darwin_arm64.tar.gz"
-      sha256 "db3ecd6b35ce7a027a02446b422d08472f738b6d70baac090a113a3b8e61dfaa"
+      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.1.5/pipelock_0.1.5_darwin_arm64.tar.gz"
+      sha256 "2fe77e909a226ea4ec89e932ee9ff431a1d531cebb7a6a55bfd68a46b03e0033"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.1.4/pipelock_0.1.4_linux_amd64.tar.gz"
-      sha256 "c1e5f5b814e4069c065007798d8635fb49c9f6f8d2bf38eea86a55725bba1962"
+      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.1.5/pipelock_0.1.5_linux_amd64.tar.gz"
+      sha256 "3be25cb7477d4c72434efb9bb7a5a318bff4289ca192b6cc30e18bcbe95ae65a"
     end
     on_arm do
-      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.1.4/pipelock_0.1.4_linux_arm64.tar.gz"
-      sha256 "e0a22839a41dcf37d547065fd3168fe6eb8e6240213ac6df341d51f04fa72480"
+      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.1.5/pipelock_0.1.5_linux_arm64.tar.gz"
+      sha256 "203317094439db9a1da5c929ca2e8f0819a3944f74f26d2b7a7b41197021599e"
     end
   end
 
