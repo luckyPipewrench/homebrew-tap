@@ -5,21 +5,21 @@
 class Pipelock < Formula
   desc "Open-source firewall for AI agents"
   homepage "https://github.com/luckyPipewrench/pipelock"
-  version "0.2.7"
+  version "0.2.8"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.2.7/pipelock_0.2.7_darwin_amd64.tar.gz"
-      sha256 "3c23c3ecac097889acd08318da9a2e60316804f4c9d165963bf693427bc04825"
+      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.2.8/pipelock_0.2.8_darwin_amd64.tar.gz"
+      sha256 "a07991b9a23ee984559940c439c0b72c6376f3e580a514dbd1455f19ba03edb4"
 
       define_method(:install) do
         bin.install "pipelock"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.2.7/pipelock_0.2.7_darwin_arm64.tar.gz"
-      sha256 "fe1d48e2d32e537450fbca7017aed50313edaf714bbb0e9900acc62ec08c3e9e"
+      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.2.8/pipelock_0.2.8_darwin_arm64.tar.gz"
+      sha256 "b4acf81bb936506150b72cca7756be1c3795aa79773af80ae8f6949f282ddd5e"
 
       define_method(:install) do
         bin.install "pipelock"
@@ -29,15 +29,15 @@ class Pipelock < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.2.7/pipelock_0.2.7_linux_amd64.tar.gz"
-      sha256 "ab250154f0403e62f2c9722e05875a94b0dc649042e93be81045889350a369f9"
+      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.2.8/pipelock_0.2.8_linux_amd64.tar.gz"
+      sha256 "b8716e8f6fd373803eb8ee02949854ab0275046fc5f2ac54e234c74c6286c2e4"
       define_method(:install) do
         bin.install "pipelock"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.2.7/pipelock_0.2.7_linux_arm64.tar.gz"
-      sha256 "f55ea302332151099c09f68fa14bc5434c3df094c1718a80e5f7d0a0806105b5"
+      url "https://github.com/luckyPipewrench/pipelock/releases/download/v0.2.8/pipelock_0.2.8_linux_arm64.tar.gz"
+      sha256 "0344b42e3a107c97559c0923a8aa8a57d57b6f89cae7662f24c23aa797e853ae"
       define_method(:install) do
         bin.install "pipelock"
       end
