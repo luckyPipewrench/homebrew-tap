@@ -11,7 +11,7 @@ class Pipelock < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/luckyPipewrench/pipelock/releases/download/v3.4.0/pipelock_3.4.0_darwin_amd64.tar.gz"
-      sha256 "403afd0c839d7cd4f83a2eb97d0522395d1e0752d6d5534134ca911fd1390e89"
+      sha256 "004914af35242a5805d9ea632a8df07922d3830e8022783338461820b937747b"
 
       define_method(:install) do
         bin.install "pipelock"
@@ -19,7 +19,7 @@ class Pipelock < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/luckyPipewrench/pipelock/releases/download/v3.4.0/pipelock_3.4.0_darwin_arm64.tar.gz"
-      sha256 "7cf8a30a82f75daa33c1b77d311c67786b4215f8661facf588017d17c8628e62"
+      sha256 "53c4ed44d111496868381a18ad7926b6ce718265b32f85cb8e54d10859f894db"
 
       define_method(:install) do
         bin.install "pipelock"
@@ -30,14 +30,14 @@ class Pipelock < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/luckyPipewrench/pipelock/releases/download/v3.4.0/pipelock_3.4.0_linux_amd64.tar.gz"
-      sha256 "37c267a9c7a5472324e3bb07def179e810a5ae7c8e761537ad1e9b2e32e9abac"
+      sha256 "15b0e2d1a0b06368e32181d5a5621cd9c1da0b6b9be37d735c1c8cea3f35c790"
       define_method(:install) do
         bin.install "pipelock"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/luckyPipewrench/pipelock/releases/download/v3.4.0/pipelock_3.4.0_linux_arm64.tar.gz"
-      sha256 "9f956e9bee7c7a8dc7530addd9017fb96cf88ba68075b55ad54c870ad99ab9ac"
+      sha256 "b2c0e9a6eb6f7e5b8a2394e7ae2373711b7003b8d27b9bb38db28737aed81da3"
       define_method(:install) do
         bin.install "pipelock"
       end
